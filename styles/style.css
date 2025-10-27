@@ -1,0 +1,44 @@
+/* Кастомные CSS переменные */
+:root {
+    --bs-primary-rgb: 13, 110, 253; /* Можно переопределить цвета Bootstrap */
+}
+
+/* Дополнительные кастомные стили */
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+}
+
+.progress {
+    overflow: visible;
+}
+
+.progress-bar {
+    position: relative;
+    overflow: visible;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 10px;
+    height: 10px;
+    background: inherit;
+    border-radius: 50%;
+}
+
+/* Адаптивность изображений */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Плавные переходы */
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
